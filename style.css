@@ -1,3 +1,156 @@
-.header a.logo { 
-   font-size: 250px;
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 40px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+header .subtext {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Icons Section Styling */
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icons a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ff9800;
+}
+
+.icons a:hover {
+    color: white;
+}
+
+/* Center - Navigation Links */
+.header-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #ff9800;
+}
+
+/* Right Side - Login and Sign Up links */
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-right a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.header-right a:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #333;
+}
+
+.hero .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Optional, limits the width of the content */
+    margin: 0 auto;
+}
+
+.hero .text-content {
+    max-width: 50%; /* Ensure the text section takes up half of the space */
+    color: white;
+}
+
+.hero .text-content h2 {
+    font-size: 3.2em;
+    margin-bottom: 20px;
+}
+
+.hero .text-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+
+.hero .cta-button:hover {
+    background-color: #f57c00;
+}
+
+.hero .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
